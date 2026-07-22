@@ -10,7 +10,7 @@ const queryClient = new QueryClient({
 interface AppProps {
   children?: React.ReactNode;
 }
-
+console.log("App initialized.");
 const App: React.FC<AppProps> = ({ children }) => (
   <ThemeProvider theme={extensionManager.getTheme()}>
     <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
